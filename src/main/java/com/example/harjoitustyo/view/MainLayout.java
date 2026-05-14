@@ -85,7 +85,7 @@ public class MainLayout extends AppLayout {
 
         Footer footer = new Footer();
         footer.addClassName("app-footer");
-        footer.add(new Span("Tekija: opiskelija"), new Span("© 2026 CRM Harjoitustyo"),
+        footer.add(new Span("Tekija: Aglaia Prokhorova"), new Span("© 2026 CRM Harjoitustyo"),
                 new Anchor("https://vaadin.com", "Vaadin"));
 
         navigation.add(footer);
