@@ -1,4 +1,4 @@
-# Vaadin Web -harjoitustyo
+# Vaadin Web -harjoitustyö
 
 CRM-tyyppinen Vaadin + Spring Boot -sovellus harjoitustyön vaatimuksiin.
 
@@ -32,7 +32,7 @@ mvn spring-boot:run
 
 GitHub- ja Google-kirjautuminen aktivoituu kopioimalla
 `config/oauth.properties.example` tiedostoksi `config/oauth.properties` ja
-tayttamalla client-id/client-secret -arvot. Tiedosto on gitignoressa.
+täyttämällä client-id/client-secret -arvot. Tiedosto on gitignoressa.
 
 Callback/redirect-osoitteet:
 
