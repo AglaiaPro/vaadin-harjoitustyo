@@ -1,0 +1,17 @@
+target/
+.tools/
+config/oauth.properties
+.idea/
+.vscode/
+*.iml
+.DS_Store
+data/
+uploads/
+logs/
+node_modules/
+frontend/generated/
+src/main/frontend/generated/
+src/main/frontend/index.html
+src/main/bundles/
+package-lock.json
+pnpm-lock.yaml

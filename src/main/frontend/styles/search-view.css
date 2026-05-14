@@ -1,0 +1,18 @@
+.advanced-search-view .search-filters {
+  border: 1px solid var(--lumo-contrast-10pct);
+}
+
+.advanced-search-view .criteria-badge {
+  font-weight: 700;
+}
+
+.advanced-search-view .search-grid {
+  border: 1px solid var(--lumo-contrast-10pct);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.advanced-search-view vaadin-grid::part(header-cell) {
+  background: var(--lumo-primary-color-10pct);
+  color: var(--lumo-primary-text-color);
+}

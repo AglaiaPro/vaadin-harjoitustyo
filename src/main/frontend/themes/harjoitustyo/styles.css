@@ -1,0 +1,192 @@
+html {
+  --lumo-font-family: Inter, "Segoe UI", Arial, sans-serif;
+  --lumo-primary-color: hsl(174, 62%, 33%);
+  --lumo-primary-color-50pct: hsla(174, 62%, 33%, 0.5);
+  --lumo-primary-color-10pct: hsla(174, 62%, 33%, 0.12);
+  --lumo-primary-text-color: hsl(174, 70%, 27%);
+  --lumo-success-color: hsl(142, 52%, 34%);
+  --lumo-error-color: hsl(352, 72%, 43%);
+  --lumo-base-color: hsl(0, 0%, 100%);
+  --lumo-body-text-color: hsl(222, 18%, 24%);
+  --lumo-secondary-text-color: hsl(223, 10%, 46%);
+  --lumo-contrast-5pct: hsla(220, 18%, 46%, 0.08);
+  --lumo-border-radius-s: 4px;
+  --lumo-border-radius-m: 6px;
+  --lumo-border-radius-l: 8px;
+  color: var(--lumo-body-text-color);
+}
+
+body {
+  background: hsl(210, 23%, 98%);
+}
+
+vaadin-app-layout::part(navbar) {
+  border-bottom: 1px solid var(--lumo-contrast-10pct);
+  box-shadow: 0 1px 10px hsla(220, 25%, 20%, 0.07);
+}
+
+vaadin-app-layout::part(drawer) {
+  border-right: 1px solid var(--lumo-contrast-10pct);
+}
+
+.app-header {
+  padding-right: var(--lumo-space-m);
+}
+
+.app-title {
+  font-size: var(--lumo-font-size-l);
+  margin: 0;
+  letter-spacing: 0;
+}
+
+.drawer-content {
+  height: 100%;
+  padding: var(--lumo-space-s);
+}
+
+.nav-link {
+  align-items: center;
+  border-radius: 6px;
+  color: var(--lumo-body-text-color);
+  display: flex;
+  gap: var(--lumo-space-s);
+  padding: var(--lumo-space-s) var(--lumo-space-m);
+  text-decoration: none;
+  transition: background 160ms ease, color 160ms ease;
+  width: 100%;
+}
+
+.nav-link:hover,
+.nav-link[highlight] {
+  background: var(--lumo-primary-color-10pct);
+  color: var(--lumo-primary-text-color);
+}
+
+.app-footer {
+  border-top: 1px solid var(--lumo-contrast-10pct);
+  color: var(--lumo-secondary-text-color);
+  display: flex;
+  flex-direction: column;
+  gap: var(--lumo-space-xs);
+  margin-top: auto;
+  padding: var(--lumo-space-m);
+}
+
+.crud-view,
+.home-view,
+.files-view,
+.history-view,
+.admin-view,
+.profile-view,
+.advanced-search-view {
+  padding: var(--lumo-space-l);
+}
+
+.entity-form {
+  background: white;
+  border-left: 1px solid var(--lumo-contrast-10pct);
+  box-shadow: -8px 0 24px hsla(220, 25%, 20%, 0.06);
+  padding: var(--lumo-space-l);
+}
+
+.metric-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--lumo-space-xs);
+  min-height: 128px;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.metric-card:hover {
+  box-shadow: 0 14px 32px hsla(220, 24%, 28%, 0.16);
+  transform: scale(1.03);
+}
+
+.metric-card:focus-within {
+  outline: 2px solid var(--lumo-primary-color-50pct);
+  outline-offset: 2px;
+}
+
+.smooth-button {
+  box-shadow: 0 3px 10px hsla(174, 62%, 24%, 0.16);
+  transition: opacity 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+.smooth-button:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.smooth-button:focus-visible {
+  box-shadow: 0 0 0 3px var(--lumo-primary-color-10pct), 0 3px 10px hsla(174, 62%, 24%, 0.16);
+}
+
+.icon-button {
+  border-radius: 999px;
+}
+
+.login-view,
+.auth-form-view,
+.centered-page {
+  margin: 0 auto;
+  padding: var(--lumo-space-xl);
+}
+
+.oauth-link,
+.download-link {
+  border: 1px solid var(--lumo-contrast-20pct);
+  border-radius: 6px;
+  color: var(--lumo-primary-text-color);
+  padding: var(--lumo-space-xs) var(--lumo-space-m);
+  text-decoration: none;
+  transition: background 160ms ease, border-color 160ms ease;
+}
+
+.oauth-link:hover,
+.download-link:hover {
+  background: var(--lumo-primary-color-10pct);
+  border-color: var(--lumo-primary-color-50pct);
+}
+
+.live-feed,
+.timeline-item,
+.quill-host {
+  border: 1px solid var(--lumo-contrast-10pct);
+}
+
+.timeline-item {
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--lumo-space-xs);
+  margin-bottom: var(--lumo-space-s);
+  padding: var(--lumo-space-m);
+}
+
+.timeline-action {
+  color: var(--lumo-primary-text-color);
+  font-weight: 700;
+}
+
+.profile-image {
+  border: 2px solid var(--lumo-primary-color-10pct);
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+vaadin-button {
+  border-radius: 6px;
+}
+
+vaadin-text-field::part(input-field),
+vaadin-email-field::part(input-field),
+vaadin-password-field::part(input-field),
+vaadin-text-area::part(input-field),
+vaadin-combo-box::part(input-field),
+vaadin-date-picker::part(input-field),
+vaadin-big-decimal-field::part(input-field),
+vaadin-integer-field::part(input-field) {
+  border: 1px solid var(--lumo-contrast-20pct);
+  box-shadow: inset 0 1px 2px hsla(220, 18%, 26%, 0.06);
+}
