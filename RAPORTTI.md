@@ -1,6 +1,6 @@
 # Tyoraportti: Vaadin Web -harjoitustyo
 
-GitHub-linkki: lisaa tahan repositorion URL julkaisemisen jalkeen.
+GitHub-linkki: https://github.com/AglaiaPro/vaadin-harjoitustyo
 
 ## Toteutettu sovellus
 
