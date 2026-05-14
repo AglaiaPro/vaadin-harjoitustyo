@@ -56,6 +56,7 @@ public class LoginView extends VerticalLayout implements BeforeEnterObserver {
         if (hasRegistration(provider, registrationId)) {
             Anchor link = new Anchor("/oauth2/authorization/" + registrationId, label);
             link.addClassName("oauth-link");
+            link.getElement().setAttribute("router-ignore", true);
             return link;
         }
         Button disabled = new Button(label);
